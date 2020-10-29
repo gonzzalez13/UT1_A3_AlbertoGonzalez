@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DAM1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar  slot="start"><img src="assets/proga.png" ></ion-avatar>
+      <ion-label>Programacion</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="checkPRO" (click)="openAlerta()"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar  slot="start"><img src="assets/base.png" ></ion-avatar>
+      <ion-label>Bases de Datos</ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="checkBase" (click)="openAlerta()"></ion-checkbox>
+    </ion-item>
+
+
+ 
+      <ion-item>
+        <ion-avatar  slot="start"><img src="assets/lenguae.jpg" ></ion-avatar>
+        <ion-label>Lenguaje de Marcas</ion-label>
+        <ion-checkbox slot="end" [(ngModel)]="checkLeng" (click)="openAlerta()"></ion-checkbox>
+      </ion-item>
+
+ 
+        <ion-item>
+          <ion-avatar  slot="start"><img src="assets/entornos.jpg" ></ion-avatar>
+          <ion-label>Entornos de desarrollo</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="checkEntor" (click)="openAlerta()"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar  slot="start"><img src="assets/fol.png" ></ion-avatar>
+          <ion-label>FOL</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="checkFol" (click)="openAlerta()"></ion-checkbox>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar  slot="start"><img src="assets/ingles.png" ></ion-avatar>
+          <ion-label>Ingles</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="checkIng" (click)="openAlerta()"></ion-checkbox>
+        </ion-item>
+  </ion-list>
+
+
+</ion-content>

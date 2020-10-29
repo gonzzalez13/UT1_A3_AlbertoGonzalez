@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DAM2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let entry of form">
+      <ion-avatar  slot="start"><img [src]= "entry.icono"></ion-avatar>
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" [color]="entry.color" [(ngModel)]="entry.isChecked" (click)="openAlerta()"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

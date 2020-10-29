@@ -1,0 +1,22 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+    <ion-chip color="secondary" slot="end">
+      <ion-icon name="person-outline" (click)="openAlerta()"></ion-icon>
+      <ion-label >Perfil</ion-label>
+    </ion-chip>
+  </ion-toolbar>
+  
+</ion-header>
+
+
+
+  <ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button color="primary" routerLink="/datos-personales" expand="block">Datos personales</ion-button>
+    <ion-button color="warning" routerLink="/modulos" expand="block">Modulos</ion-button>
+  </div>
+  <div>
+    <ion-label>He conseguido hacer un commit usando GIT</ion-label>
+  </div>
+</ion-content>
